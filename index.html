@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Collector</title>
+
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<header>
+  <h1 class="text-center">Crystal Collector</h1>
+</header>
+<div class="container">
+  <p>You will be given a random number at the start of the game</p>
+  <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+  <p>You win the game by matching your total score to a random number, you lose the game if your score goes above the random number.</p>
+  <p>The value of each crystal is hidden from you until you click on it.</p>
+  <p>Each time when the game starts, the game will change the value of each crystal</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <p>Score to guess</p>
+      <p id="comp-score"></p>
+    </div>
+    <div class="col-sm-4">
+      <p>Wins: <span id="wins"></span></p>
+      <p>Losses: <span id="losses"></span></p>
+    </div>
+  </div><span>
+
+  <div class="row"> 
+    <div class="col-sm-8">
+      <p class="wins"></p>
+      <p class="losses"></p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card" id="blue-gem" style="width: 10rem;">
+          <img src="assets/images/blue-gem.png" class="card-img-top" alt="Blue Gem">
+        </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card" id="green-gem" style="width: 10rem;">
+        <img src="assets/images/green-gem.jpg" class="card-img-top" alt="Green Gem">
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card" id="purple-gem" style="width: 10rem;">
+        <img src="assets/images/purple-gem.jpg" class="card-img-top" alt="Purple Gem">
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card" id="red-gem" style="width: 10rem;">
+        <img src="assets/images/red-gem.jpg" class="card-img-top" alt="Red Gem">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <p>Your total score is</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <p id="user-score"></p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>

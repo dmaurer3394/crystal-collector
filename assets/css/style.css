@@ -1,0 +1,16 @@
+body {
+    background-image: url(../images/background.jpg);
+}
+
+.container {
+    background-color: rgba(179, 179, 179, 0.897);
+}
+
+.gem {
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border: 2px;
+    border-color: black;
+    display: inline;
+}
