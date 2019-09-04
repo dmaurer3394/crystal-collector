@@ -14,3 +14,7 @@ body {
     border-color: black;
     display: inline;
 }
+
+#gem-push {
+    padding-left: 20px
+}
