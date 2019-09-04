@@ -11,7 +11,7 @@ $(document).ready(function() {
     var losses = 0;
 
     function logScores() {
-    console.log("--------------------")
+    console.log("--------------------");
     console.log("Score: " + compScore);
     console.log("Blue: " + blueVal);
     console.log("Green: " + greenVal);
