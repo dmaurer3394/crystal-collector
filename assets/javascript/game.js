@@ -3,10 +3,10 @@ $(document).ready(function() {
     //Declare variables
     var compScore = randomScore(19, 120);
     var userScore = 0;
-    var blueVal = randomScore(1,12);
-    var greenVal = randomScore(1,12);
-    var purpleVal = randomScore(1,12);
-    var redVal = randomScore(1,12);
+    var blueVal = 0;
+    var greenVal = 0;
+    var purpleVal = 0;
+    var redVal = 0;
     var wins = 0;
     var losses = 0;
 
@@ -21,6 +21,19 @@ $(document).ready(function() {
     console.log("Losses: " + losses);
     }
 
+    function assignCrystalValues() {
+        var arr = []
+        while(arr.length < 4){
+            var r = randomScore(1,12);
+            if(arr.indexOf(r) === -1) arr.push(r);
+        }
+
+        blueVal = arr[0];
+        greenVal = arr[1];
+        purpleVal = arr[2];
+        redVal = arr[3];
+    }
+
 
     function randomScore(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
@@ -29,10 +42,7 @@ $(document).ready(function() {
     function resetGame() {
         userScore = 0;
         compScore = randomScore(19, 120);
-        blueVal = randomScore(1,12);
-        greenVal = randomScore(1,12);
-        purpleVal = randomScore(1,12);
-        redVal = randomScore(1,12);
+        assignCrystalValues();
         textSetup();
         logScores();
     }
@@ -94,6 +104,7 @@ $(document).ready(function() {
         checkWin();
     });
 
-    textSetup();
-    logScores();
+    // textSetup();
+    // logScores();
+    resetGame();
 });
